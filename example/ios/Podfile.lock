@@ -1,0 +1,45 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_pjsip (0.0.1):
+    - Flutter
+    - Masonry (~> 1.1.0)
+    - pjsip (~> 2.9.0.2)
+  - fluttertoast (0.0.2):
+    - Flutter
+  - Masonry (1.1.0)
+  - "permission_handler (5.1.0+2)":
+    - Flutter
+  - pjsip (2.9.0.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_pjsip (from `.symlinks/plugins/flutter_pjsip/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - pjsip
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_pjsip:
+    :path: ".symlinks/plugins/flutter_pjsip/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  flutter_pjsip: b8d81a2033da41e81ec2549d18e28d9bddbacd33
+  fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  pjsip: faa8aa0e79b341155801b87c2ea3015003d05ed9
+
+PODFILE CHECKSUM: 9b1f89de045582d41658cb7e27add7136955e295
+
+COCOAPODS: 1.10.1
