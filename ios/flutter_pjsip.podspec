@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'Classes/**/*.h'
     s.dependency 'Flutter'
     s.resources = ['Classes/PJSIPClass/Assets/*.png','Classes/PJSIPClass/Assets/*.wav']
-    #s.dependency 'pjsip','~> 2.9.0.2'
+    s.dependency 'pjsip','~> 2.9.0.2'
     s.dependency 'Masonry', '~> 0.6.3'
     #s.dependency 'Masonry', '~> 1.1.0'
     s.ios.deployment_target = '9.0'
