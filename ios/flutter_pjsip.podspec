@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
     s.dependency 'Masonry', '~> 0.6.3'
     #s.dependency 'Masonry', '~> 1.1.0'
     s.ios.deployment_target = '9.0'
+    s.static_framework = true
+
 
     header_search_paths     = [
                                   '"$(PODS_ROOT)/Headers/Public/pjsip/pjlib/include"',
