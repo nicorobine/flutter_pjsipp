@@ -3,13 +3,13 @@ PODS:
   - flutter_pjsip (0.0.1):
     - Flutter
     - Masonry (~> 1.1.0)
-    - pjsip (~> 2.9.0.2)
+    - nr_pjsip_ios (~> 0.1.0)
   - fluttertoast (0.0.2):
     - Flutter
   - Masonry (1.1.0)
+  - nr_pjsip_ios (0.1.0)
   - "permission_handler (5.1.0+2)":
     - Flutter
-  - pjsip (2.9.0.2)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -18,9 +18,10 @@ DEPENDENCIES:
   - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
 
 SPEC REPOS:
+  https://github.com/nicorobine/Specs.git:
+    - nr_pjsip_ios
   trunk:
     - Masonry
-    - pjsip
 
 EXTERNAL SOURCES:
   Flutter:
@@ -34,12 +35,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  flutter_pjsip: 7c4ccde3746af41bc8e52d3159ef276caead5d6d
+  flutter_pjsip: 9b7fddecb16d2149638a9278c103a24d43576fee
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  nr_pjsip_ios: 5a49c4675e378d6242a16b115b3a7d5cda3e1604
   permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
-  pjsip: faa8aa0e79b341155801b87c2ea3015003d05ed9
 
-PODFILE CHECKSUM: 80401aeaf45bb0c597352b4846baa7103aef9c57
+PODFILE CHECKSUM: d2f35c99d41c340e0c0f3d6dc1189a61295fb64b
 
 COCOAPODS: 1.10.1
