@@ -1,7 +1,7 @@
 #import "AppDelegate.h"
 #import "GeneratedPluginRegistrant.h"
 #import "MainViewController.h"
-#import <flutter_pjsip/FlutterAppDelegate+Pjsip.h>
+//#import <flutter_pjsip/FlutterAppDelegate+Pjsip.h>
 
 @implementation AppDelegate
 
@@ -17,7 +17,7 @@
     self.window.rootViewController = [[MainViewController alloc] initWithProject:[[FlutterDartProject alloc] init]  nibName:nil bundle:nil];
     [self.window makeKeyAndVisible];
     [GeneratedPluginRegistrant registerWithRegistry:self];
-    [self setupPjsip:application rootController:self.window.rootViewController];
+//    [self setupPjsip:application rootController:self.window.rootViewController];
     return rs;
 }
 
