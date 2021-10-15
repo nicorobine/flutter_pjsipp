@@ -29,6 +29,7 @@
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"flutter_pjsip"
             binaryMessenger:[registrar messenger]];
+    [self methodChannel:channel];
   FlutterPjsipPlugin* instance = [[FlutterPjsipPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
@@ -41,7 +42,7 @@
   }
 }
 
-- (void)methodChannel:(FlutterMethodChannel *)methodChannel{
++ (void)methodChannel:(FlutterMethodChannel *)methodChannel{
     
     [PJSipManager manager].methodChannel = methodChannel;
     //设置监听
