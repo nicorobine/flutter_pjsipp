@@ -30,12 +30,12 @@
       methodChannelWithName:@"flutter_pjsip"
             binaryMessenger:[registrar messenger]];
 //    [self methodChannel:channel];
+    [PJSipManager manager].methodChannel = channel;
     FlutterPjsipPlugin* instance = [[FlutterPjsipPlugin alloc] init];
     [registrar addMethodCallDelegate:instance channel:channel];
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
-    [PJSipManager manager].methodChannel = methodChannel;
     NSString *method=call.method;
     NSDictionary * dict = (NSDictionary *)call.arguments;
     if ([@"getPlatformVersion" isEqualToString:call.method]) {
