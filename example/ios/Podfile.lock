@@ -3,11 +3,11 @@ PODS:
   - flutter_pjsip (0.0.1):
     - Flutter
     - Masonry (~> 1.1.0)
-    - nr_pjsip_ios (~> 0.1.0)
+    - nr_pjsip_ios (~> 0.1.1)
   - fluttertoast (0.0.2):
     - Flutter
   - Masonry (1.1.0)
-  - nr_pjsip_ios (0.1.0)
+  - nr_pjsip_ios (0.1.1)
   - "permission_handler (5.1.0+2)":
     - Flutter
 
@@ -35,10 +35,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  flutter_pjsip: 9b7fddecb16d2149638a9278c103a24d43576fee
+  flutter_pjsip: 70e5a69d9bad39808b63355dfb24b0813a26c497
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  nr_pjsip_ios: 5a49c4675e378d6242a16b115b3a7d5cda3e1604
+  nr_pjsip_ios: b489b012bd7eaf1d11a4ab59d0fbe6ddc8bb6c69
   permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
 
 PODFILE CHECKSUM: d2f35c99d41c340e0c0f3d6dc1189a61295fb64b

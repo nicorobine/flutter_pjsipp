@@ -13,12 +13,12 @@ Pod::Spec.new do |s|
     s.license          = { :file => '../LICENSE' }
     s.author           = { 'Your Company' => 'email@example.com' }
     s.source           = { :path => '.' }
-    s.source_files = 'Classes/**/*'
+    s.source_files = 'Classes/**/*.{h,m}'
     s.public_header_files = 'Classes/**/*.h'
     s.dependency 'Flutter'
     s.resources = ['Classes/PJSIPClass/Assets/*.png','Classes/PJSIPClass/Assets/*.wav']
     #s.dependency 'pjsip','~> 2.9.0.2'
-    s.dependency 'nr_pjsip_ios','~> 0.1.0'
+    s.dependency 'nr_pjsip_ios','~> 0.1.1'
     #s.dependency 'Masonry', '~> 0.6.3'
     s.dependency 'Masonry', '~> 1.1.0'
     s.ios.deployment_target = '9.0'

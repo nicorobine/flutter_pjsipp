@@ -151,6 +151,7 @@ static dispatch_once_t onceToken;
     }
     return YES;
 }
+
 //登录
 - (BOOL)registerAccountWithName:(NSString *)name password:(NSString *)password IPAddress:(NSString *)ipaddress {
     if (name.length == 0 ||
@@ -159,7 +160,6 @@ static dispatch_once_t onceToken;
         ) {
         return NO;
     }
-    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRegisterStatus:) name:@"SIPRegisterStatusNotification" object:nil];
     
@@ -174,7 +174,8 @@ static dispatch_once_t onceToken;
     // 调用这个函数来初始化帐户配置与默认值
     pjsua_acc_config_default(&cfg);
     cfg.id = pj_str((char *)[NSString stringWithFormat:@"sip:%@@%@", name, ipaddress].UTF8String);
-    // 这是URL放在请求URI的注册，看起来就像“SIP服务提供商”。如果需要注册，则应指定此字段。如果价值是空的，没有帐户注册将被执行。
+    // 这是URL放在请求URI的注册，看起来就像“SIP服务提供商”。
+    // 如果需要注册，则应指定此字段。如果价值是空的，没有帐户注册将被执行。
     cfg.reg_uri = pj_str((char *)[NSString stringWithFormat:@"sip:%@", ipaddress].UTF8String);
     // 在注册失败时指定自动注册重试的时间间隔,0禁用自动重新注册
     cfg.reg_retry_interval = 0;
@@ -203,6 +204,10 @@ static dispatch_once_t onceToken;
     }
     return YES;
 }
+
+
+
+
 -(BOOL)logOut{
     pjsua_acc_id acct_id = (pjsua_acc_id)[[NSUserDefaults standardUserDefaults] integerForKey:@"login_account_id"];
     pj_status_t status = pjsua_acc_del(acct_id &_call_id);

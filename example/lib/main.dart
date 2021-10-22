@@ -148,12 +148,12 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> _sipLogin() async {
     bool loginSuccess =
-    await _pjsip.pjsipLogin(username: '1025', password: '1', ip: '39.107.68.193', port: '9017');
+    await _pjsip.pjsipLogin(username: 'w', password: '1', ip: '39.107.68.193', port: '9017');
     showToast('登录', loginSuccess);
   }
 
   Future<void> _sipCall() async {
-    bool callSuccess = await _pjsip.pjsipCall(username: '1026', ip: '39.107.68.193', port: '9017');
+    bool callSuccess = await _pjsip.pjsipCall(username: 'l', ip: '39.107.68.193', port: '9017');
     showToast('打电话', callSuccess);
   }
 
